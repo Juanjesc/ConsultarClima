@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import AppClima from './components/AppClima'
-import { ClimaProvider } from './context/climaProvider'
+import { ClimaProvider } from './context/ClimaProvider'
 
 function App() {
 
