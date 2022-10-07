@@ -26,7 +26,6 @@ const ClimaProvider = ({children}) => {
             const appId = import.meta.env.VITE_API_KEY
             const url = `https://api.openweathermap.org/geo/1.0/direct?q=${ciudad},${pais}&limit=1&appid=${appId}`
             const { data } = await axios(url)
-            console.log(data[0])
             const { lat, lon } = data[0]
             const url_clima = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${appId}`
             const { data: clima } = await axios(url_clima)
